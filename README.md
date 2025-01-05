@@ -47,12 +47,11 @@ Example workflow:
 3. View updates and changes dynamically in the terminal.
 
 ## Project Structure:
-```bash
 TaskFlow/
-├── main.py           # Entry point of the program
-├── functions.py      # Core task management logic
-├── extra_credit.py   # Additional utility functions (e.g., rank conversion)
-├── tests.py          # Unit tests for key functionalities
+- main.py           # Entry point of the program
+- functions.py      # Core task management logic
+- extra_credit.py   # Additional utility functions (e.g., rank conversion)
+- tests.py          # Unit tests for key functionalities
 
 ## Key Functions:
 - **add_helper():** Allows users to add new tasks with details such as name, priority, and due date.
