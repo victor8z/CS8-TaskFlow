@@ -53,3 +53,31 @@ TaskFlow/
 ├── functions.py      # Core task management logic
 ├── extra_credit.py   # Additional utility functions (e.g., rank conversion)
 ├── tests.py          # Unit tests for key functionalities
+
+## Key Functions:
+- **add_helper():** Allows users to add new tasks with details such as name, priority, and due date.
+- **delete_task():** Removes a task from the list by ID.
+- **update_task():** Updates fields (e.g., priority, due date) of an existing task.
+- **rank_to_english():** Converts numerical task priority into human-readable text.
+- **is_valid_date():** Validates date input in the MM/DD/YYYY format.
+
+## Examples:
+- **Adding a new task:**
+::: Enter the task information:
+* Enter at least 2 letters for the task name: Build a time machine
+* Enter additional information for this task: Clean the parabolic reflectors
+* Enter the priority of this task (1, 2, 3, 5, 8): 5
+* Enter a valid date in the US date format (MM/DD/YYYY): 12/25/2040
+* Is this task completed? y/n: n
+
+-**Marking a task as completed:**
+::: Mark a task as completed:
+0 - Collect unicorn glitter - Task is Completed
+1 - Build a time machine - Task is not Completed
+Enter the number corresponding to the task ID to mark as completed: 1
+Task marked as completed.
+
+## Testing:
+The tests.py file contains a comprehensive suite of unit tests. Run the tests with:
+```bash
+python -m unittest tests.py
